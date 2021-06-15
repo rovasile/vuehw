@@ -7,6 +7,7 @@ export const store = createStore({
     cart: [],
     cartIndex: 0
   },
+
   mutations: {
     setCatalog(state, items) {
       state.catalog = items;
@@ -23,6 +24,7 @@ export const store = createStore({
       })
     }
   },
+
   actions: {
     fillCatalog({commit}) {
       axios.get('https://jsonplaceholder.typicode.com/users')

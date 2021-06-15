@@ -13,11 +13,6 @@ import axios from 'axios';
 
 export default {
   name: 'App',
-  computed: {
-    items: function () {
-      return this.$store.state.catalog;
-    }
-  },
   mounted() {
     this.$store.dispatch('fillCatalog');
   }
