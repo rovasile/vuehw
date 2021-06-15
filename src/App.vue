@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id='root'>
+    <div id='nav'>
+      <router-link to='/'> Items</router-link>
+      <router-link to='/ShoppingList'>Shopping List </router-link>
+    </div>
+    <router-view />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+//import { ref } from 'vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+ 
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<style scoped>
+#root {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img {
+  width: 200px;
+}
+#nav {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+a {
+  text-decoration: none;
+  margin: 30px 25px;
+  color: #333;
+}
+a:hover {
+  text-decoration: underline;
+  color: 
 }
 </style>
