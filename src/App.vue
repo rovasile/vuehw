@@ -4,14 +4,23 @@
       <router-link to='/'> Items</router-link>
       <router-link to='/ShoppingList'>Shopping List </router-link>
     </div>
-    <router-view />
+    <router-view/>
   </div>
 </template>
 
 <script>
-//import { ref } from 'vue'
+import axios from 'axios';
+
 export default {
- 
+  name: 'App',
+  computed: {
+    items: function () {
+      return this.$store.state.catalog;
+    }
+  },
+  mounted() {
+    this.$store.dispatch('fillCatalog');
+  }
 }
 </script>
 
