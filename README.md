@@ -1,24 +1,2 @@
-# my-app
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![img1](https://cdn.discordapp.com/attachments/852155123001196555/854729806925791252/unknown.png)
+![img2](https://cdn.discordapp.com/attachments/852155123001196555/854729847100538880/unknown.png)
