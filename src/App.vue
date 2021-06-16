@@ -1,8 +1,8 @@
 <template>
   <div id='root'>
     <div id='nav'>
-      <router-link to='/'> Items</router-link>
-      <router-link to='/ShoppingList'>Shopping List </router-link>
+      <router-link to='/'> <Button label="Item list"/></router-link>
+      <router-link to='/ShoppingList'><Button label="Shopping list"/> </router-link>
     </div>
     <router-view/>
   </div>
