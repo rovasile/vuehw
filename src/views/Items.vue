@@ -1,6 +1,6 @@
 <template>
-  <template v-for="item in items" :key="item.id">
-    <Product :id="item.id" :name="item.name" :email="item.email"/>
+  <template v-for="item in items" :key="item.phoneId">
+    <Product :id="item.phoneId" :name="item.model" :email="item.price"/>
   </template>
 </template>
 

@@ -1,9 +1,9 @@
 <template>
   <div class="product">
     <div class="product-info">
-      <span> {{ id }} </span>
-      <span> {{ name }} </span>
-      <span> {{ email }} </span>
+      <span> {{ id }} </span> &nbsp;
+      <span> {{ name }} </span> &nbsp;
+      <span> {{ email }} </span> &nbsp;
     </div>
     <button v-if="inCart" @click="removeItem">
       Remove

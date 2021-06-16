@@ -27,9 +27,10 @@ export const store = createStore({
 
   actions: {
     fillCatalog({commit}) {
-      axios.get('https://jsonplaceholder.typicode.com/users')
+      axios.get('http://localhost:3000/api/latest/phone')
         .then(response => {
-          commit('setCatalog', response.data);
+          console.log(response.data.entry);
+          commit('setCatalog', response.data.entry);
         })
     }
   }
